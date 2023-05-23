@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="click_count">Clicks: 0</div>
+    <div id="pairs_left">Pairs left: </div>
+    <div id="pairs_matched">Pairs matched: 0</div>
+    <div id="total_pairs">Total pairs: </div>
+    <div id="timer">Time: 0</div>
+  </div>
+  <button id="start_game">Start Game</button>
+  <button id="reset_game">Reset Game</button>
+  <div id="message"></div>
+  <select id="difficulty">
+    <option value="6">Easy</option>
+    <option value="12">Medium</option>
+    <option value="18">Hard</option>
+  </select>
+  <div id="game_grid">
+  </div>
+  <button id="theme_switch">Switch Theme</button>
+  <script src="index.js"></script>
+</body>
+
+</html>
