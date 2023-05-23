@@ -91,6 +91,8 @@ const setup = () => {
           secondCard.find(".front_face").attr("src")
         ) {
           matchedCards.push(firstCard, secondCard);
+          firstCard.addClass("match");
+          secondCard.addClass("match");
           $("#pairs_matched").text(`Pairs matched: ${matchedCards.length / 2}`);
           $("#pairs_left").text(
             `Pairs left: ${totalPairs - matchedCards.length / 2}`
@@ -114,7 +116,7 @@ const setup = () => {
       if (hasPowerUp()) {
         alert("Power up!");
 
-        const unmatchedCards = $(".card").not(".flip");
+        const unmatchedCards = $(".card").not(".flip").not(".match");
         unmatchedCards.addClass("flip");
 
         setTimeout(() => {
